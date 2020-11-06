@@ -1,0 +1,6 @@
+error
+{
+  "output": "/app/plan: line 3:  3417 Segmentation fault      timeout 10 \"$(dirname \"$0\")\"/siw-then-bfsf --domain $1 --problem $2 --output $3\n",
+  "parse_status": "err",
+  "error": "Suspected timeout.\n\n/app/plan: line 3:  3417 Segmentation fault      timeout 10 \"$(dirname \"$0\")\"/siw-then-bfsf --domain $1 --problem $2 --output $3\n"
+}
