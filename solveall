@@ -1,0 +1,8 @@
+#!/bin/csh -x
+
+# us planner.domains solver to solve all of the files matching p*.pddl
+# and puts the output into *.pddl.out
+
+foreach f (p*.pddl)
+    python solve.py $f $f.out
+end
