@@ -76,7 +76,7 @@
 
   ;; wash the brush ?brush that is currently loaded with paint of color ?color
   ;; in the water bucket ?wb
-  (:action wash the brush ?brush using a water bucket ?wb 
+  (:action wash-brush
     :parameters (?brush ?wb ?color)
     :precondition (and (< 1 0))   ; REPLACE (< 1 0) WITH ONE OR MORE CONDITIONS
     :effect (and (true))          ; REPLACE with the action's effects
