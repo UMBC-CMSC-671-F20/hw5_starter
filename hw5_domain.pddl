@@ -15,15 +15,15 @@
 	       (clear ?x)
 	       (arm-empty)
 	       (holding ?x)
-	       (block ?x)                    ; ?x is a block
+	       (block ?x)              ; ?x is a block
 	       (paint-can ?x ?color)   ; ?x is a paint can with paint color ?color
-	       (brush ?x)                    ; ?x is a paint brush
+	       (brush ?x)              ; ?x is a paint brush
 	       (water-bucket ?wb)      ; ?x is a water bucket
-	       (color ?x ?color)           ; ?x has color ?color
-               (open ?can)                  ; paint can ?can is open
-	       (clean ?brush)              ; brush ?brush is clean
+	       (color ?x ?color)       ; ?x has color ?color
+               (open ?can)             ; paint can ?can is open
+	       (clean ?brush)          ; brush ?brush is clean
 	       (loaded ?brush ?color)  ; brush ?brush is loaded with paint of color ?color
-               (true))                           ; dummy effect of no consequence
+               (true))                 ; dummy effect of no consequence
 
   ;; the four classic actions for manipulating objects
 
@@ -70,31 +70,31 @@
   (:action paint
     :parameters (?obj ?color ?brush)
     :precondition (and (< 1 0))   ; REPLACE (< 1 0) WITH ONE OR MORE CONDITIONS
-    :effect (and (true))                ; REPLACE with the action's effects
+    :effect (and (true))          ; REPLACE with the action's effects
     )
 
   (:action wash-brush
     :parameters (?brush ?wb ?color)
     :precondition (and (< 1 0))   ; REPLACE (< 1 0) WITH ONE OR MORE CONDITIONS
-    :effect (and (true))                ; REPLACE with the action's effects
+    :effect (and (true))          ; REPLACE with the action's effects
     )
 
   (:action load-brush
     :parameters (?brush ?can ?color)
     :precondition (and (< 1 0))   ; REPLACE (< 1 0) WITH ONE OR MORE CONDITIONS
-    :effect (and (true))                ; REPLACE with the action's effects
+    :effect (and (true))          ; REPLACE with the action's effects
     )
 
    (:action remove-can-lid 
     :parameters (?can ?color)
     :precondition (and (< 1 0))   ; REPLACE (< 1 0) WITH ONE OR MORE CONDITIONS
-    :effect (and (true))                ; REPLACE with the action's effects
+    :effect (and (true))          ; REPLACE with the action's effects
     )
 
    (:action replace-can-lid
     :parameters (?can ?color)
     :precondition (and (< 1 0))   ; REPLACE (< 1 0) WITH ONE OR MORE CONDITIONS
-    :effect (and (true))                ; REPLACE with the action's effects
+    :effect (and (true))          ; REPLACE with the action's effects
     )
 
 )
